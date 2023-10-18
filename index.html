@@ -18,7 +18,6 @@
     <!-- Custom CSS -->
     <link href="css/timeline.css" rel="stylesheet">
     <link href="css/freelancer.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"
@@ -56,7 +55,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="#page-top" ></a>
                     </li>
                     <li class="page-scroll">
                             <a href="#news-list">News</a>
@@ -69,6 +68,7 @@
                     <li class="page-scroll">
                             <a href="#contact">Contact</a>
                     </li>
+                    <button id="toggleDarkMode">Toggle Dark Mode</button>
                     <!-- <li>
                         <a href="https://drive.google.com/open?id=1UzyjfWd0-lx62uz1L4xcwGVD7ZGTJK99">CV</a>
                     </li> -->
@@ -132,30 +132,27 @@
                                 During my undergraduate studies, I interned at Newcastle University in 
                                 partnership with the Max Planck Institute, working under the supervision of Dr. 
                                 Sadegh Soudjani and Dr. Arabinda Ghosh to develop Reinforcement Learning solutions 
-                                for addressing challenges associated with stochastic max-plus linear systems.
+                                for addressing challenges associated with stochastic max-plus linear systems. 
+                
                             </p>
                         </span>
                         <hr>
                         <span class="skills">
                             <ul class="list-inline">
                                 <li>
-                                    <a href="https://www.semanticscholar.org/author/Vignesh-Subramanian/2061399481" class="btn-social btn-outline"><i class="ai ai-semantic-scholar"></i></a>
+                                    <a href="https://www.semanticscholar.org/author/Vignesh-Subramanian/2061399481" class="btn-social btn-outline" target="_blank" rel="noopener noreferrer"><i class="ai ai-semantic-scholar"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://scholar.google.com/citations?user=yx5uCyQAAAAJ&hl=en"
-                                        class="btn-social btn-outline"><i class="ai ai-google-scholar"></i></a>
+                                    <a href="https://scholar.google.com/citations?user=yx5uCyQAAAAJ&hl=en" class="btn-social btn-outline" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar" ></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/vignesh-subramanian-3754311b7/" class="btn-social btn-outline"><i
-                                            class="fa fa-fw fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/vignesh-subramanian-3754311b7/" class="btn-social btn-outline" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-linkedin"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/VigneshS10" class="btn-social btn-outline"><i
-                                            class="fa fa-fw fa-github"></i></a>
+                                    <a href="https://github.com/VigneshS10" class="btn-social btn-outline" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/BurpSomeScience" class="btn-social btn-outline"><i
-                                            class="fa fa-fw fa-twitter"></i></a>
+                                    <a href="https://twitter.com/BurpSomeScience" class="btn-social btn-outline" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-twitter"></i></a>
                                 </li>
                             </ul>
                         </span>
@@ -225,6 +222,10 @@
                 <div class="col-lg-12 text-center">
                     <h2>News</h2>
                     <hr class="light">
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">August 2023</div>
+                    <div class="col-xs-8">Joined <span class="bold-red">Georgia Tech</span> as a PhD Student</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-4 news-date">May 2023</div>
@@ -319,89 +320,7 @@
 
     </section>
 
-    
-
-
     <!-- Portfolio Grid Section -->
-    <!-- <section id="projects">
-        <div class="">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="light">
-                </div>
-            </div>
-            <div class="band">
-                <div class="item-1">
-                    <a href="https://github.com/VigneshS10/Tri-Stage-Occlusion-Handling-Normal-map-Estimation-Algorithm" class="card portfolio-link" > -->
-                        <!-- <div class="thumb"
-                            style=""> -->
-                        <!-- </div>
-                        <article class="article">
-                            <h1>TSONHMEA</h1>
-                            <p>The Tri-Stage Occlusion Handling Normal Map Estimation Algorithm is tailored for generating 
-                                accurate 3D Normal Maps from heavily occluded 2D images. It operates in three stages: the 
-                                initial phases tackle various occlusions like background, shadow, and blur. In the final 
-                                stage, the algorithm performs normal map estimation, combining depth and orientation data. 
-                                This approach ensures robust handling of complex occlusion scenarios and consistently improves
-                                 the quality of normal map generation across a diverse range of image conditions.</p>
-                            <span>Samsung Research</span>
-                        </article>
-                    </a>
-                </div>
-                <div class="item-2"> -->
-                    <!-- <a href="https://github.com/VigneshS10/Model-Quantization-For-Diabetes-Classification-in-Edge-Devices" class="card portfolio-link"> -->
-                        <!-- <div class="thumb" style="background-image: url(img/Fabrik.png);"></div> -->
-                        <!-- <article class="article">
-                            <h1>Model Quantization For Diabetes Classification in Edge Devices</h1>
-                            <p>A static quantization approach is employed to optimize AlexNet, MobileNet, and ResNet-50 
-                                models trained on the Retina-based Diabetes Classification dataset. This technique 
-                                aims to achieve superior classification accuracy while substantially reducing the model size. 
-                                By implementing static quantization without compromising performance, we enhance the overall 
-                                classification efficiency, allowing for more streamlined and effective model deployment in practical applications.</p>
-                            <span>IIIT Hyderabad</span>
-                        </article>
-                    </a>
-                </div>
-
-                <div class="item-3">
-                    <a href="https://github.com/VigneshS10/Binary-Sequence-Classification-using-BERT" class="card portfolio-link"> -->
-                        <!-- <div class="thumb" style="background-image: url(img/Fabrik.png);"></div> -->
-                        <!-- <article class="article">
-                            <h1>Binary Sequence Classification using BERT</h1>
-                            <p> BERT (Bidirectional Encoder Representations from Transformers) in PyTorch was utilized 
-                                to solve a binary sequence classification task. The objective was to distinguish 
-                                paragraphs based on their ability to remain relevant over time, categorizing them as 
-                                either "evergreen" or "ephemeral." This approach leverages pre-trained word embeddings 
-                                and transformers to achieve accurate classification.</p>
-                            <span>Kaggle</span>
-                        </article>
-                    </a>
-                </div>
-
-                <div class="item-3"> -->
-                    <!-- <a href="https://www.youtube.com/watch?v=CVP36nZr4QU" class="card portfolio-link"> -->
-                        <!-- <div class="thumb" style="background-image: url(img/Fabrik.png);"></div> -->
-                        <!-- <article class="article">
-                            <h1>GISiL</h1>
-                            <p>The project centered around the development of a mechanical exoskeleton with the 
-                                capability to translate American Sign Language (ASL) into English. Scripts were 
-                                devised to collect data from mini-potentiometers integrated into the exoskeleton, 
-                                facilitating the precise measurement of bending angles in each finger joint. 
-                                Furthermore, a model was constructed within a mobile server using a deep learning 
-                                network tailored for the classification of ASL alphabet signs based on the sensor 
-                                outputs.</p>
-                            <span>Spider R&D</span>
-                        </article>
-                    </a>
-                </div>
-                
-
-
-            </div>
-        </div>
-    </section> -->
-
     <section id="projects">
         <div class="">
             <div class="row">
@@ -455,7 +374,7 @@
                     <a href="https://www.youtube.com/watch?v=CVP36nZr4QU" class="card portfolio-link">
                         <article class="article">
                             <h1>GISiL</h1>
-                            <p>The project centered around the development of a mechanical exoskeleton with the 
+                            <p>The project is centered around the development of a mechanical exoskeleton with the 
                                 capability to translate American Sign Language (ASL) into English. Scripts were 
                                 devised to collect data from mini-potentiometers integrated into the exoskeleton, 
                                 facilitating the precise measurement of bending angles in each finger joint. 
