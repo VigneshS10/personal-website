@@ -30,6 +30,7 @@ $(function() {
     function setTheme(theme) {
         var isDark = theme === 'dark';
 
+        document.documentElement.classList.add('theme-changing');
         document.documentElement.setAttribute('data-theme', theme);
         try {
             localStorage.setItem('theme', theme);
@@ -41,6 +42,9 @@ $(function() {
         $icon.toggleClass('fa-moon-o', !isDark);
         $icon.toggleClass('fa-sun-o', isDark);
         $label.text(isDark ? 'Light' : 'Dark');
+        window.setTimeout(function() {
+            document.documentElement.classList.remove('theme-changing');
+        }, 0);
     }
 
     setTheme(document.documentElement.getAttribute('data-theme') || 'light');
