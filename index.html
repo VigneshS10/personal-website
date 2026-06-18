@@ -13,7 +13,6 @@
     <script>
         (function () {
             var savedTheme = null;
-            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
             try {
                 savedTheme = localStorage.getItem('theme');
@@ -21,9 +20,7 @@
                 savedTheme = null;
             }
 
-            var theme = savedTheme || (prefersDark ? 'dark' : 'light');
-
-            document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.setAttribute('data-theme', savedTheme || 'light');
         })();
     </script>
 
@@ -33,7 +30,7 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/timeline.css" rel="stylesheet">
-    <link href="assets/css/freelancer.css" rel="stylesheet">
+    <link href="assets/css/freelancer.css?v=6" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"
@@ -81,32 +78,40 @@
                 <li><a href="resume.html"><i class="fa fa-file-text-o" aria-hidden="true"></i> Resume</a></li>
             </ul>
         </aside>
-
+ 
         <main class="academic-content">
             <section id="about" class="academic-section">
-                <h2>About me</h2>
-                <p>
-                    I am a 4th-year Ph.D. student and a Graduate Research Assistant at the Georgia Institute of Technology under the guidance of <a href="https://suguman.github.io/" target="_blank" rel="noopener noreferrer">Dr. Suguman Bansal</a>. My work sits at the intersection of <strong>Formal Methods</strong> and <strong>Reinforcement Learning</strong>, with growing interest in how <strong>LLMs</strong> can enhance decision-making, planning, and generalization in interactive learning environments.
-                </p>
-                <p>
-                    The overarching goal of my research is to create advanced AI systems that improve the <strong>scalability</strong>, <strong>robustness</strong>, and <strong>trustworthiness</strong> of RL algorithms. I aim to bridge Formal Methods, which provide rigorous mathematical guarantees, and Reinforcement Learning, which excels in learning from interaction.
-                </p>
-                <p>
-                    During my undergraduate studies, I interned at Newcastle University in partnership with the Max Planck Institute, working under the supervision of <a href="https://hycodev.com/ssoudjani" target="_blank" rel="noopener noreferrer">Dr. Sadegh Soudjani</a> to develop Reinforcement Learning solutions for stochastic max-plus linear systems.
-                </p>
+                <div class="content-block">
+                    <h2>About me</h2>
+                    <p>
+                        I am a fourth-year Ph.D. student and Graduate Research Assistant in the School of Computer Science at the Georgia Institute of Technology, advised by <a class="person-link" href="https://suguman.github.io/" target="_blank" rel="noopener noreferrer">Dr. Suguman Bansal</a>. My research lies at the intersection of <strong>Formal Methods</strong> and <strong>Reinforcement Learning</strong>, with a focus on building <strong>learning-enabled systems</strong> that can <strong>generalize reliably</strong>, be <strong>evaluated rigorously</strong>, and satisfy <strong>formally specified behavior</strong>.
+                    </p>
+                    <p>
+                        My work aims to make reinforcement learning systems more <strong>scalable</strong>, <strong>robust</strong>, and <strong>trustworthy</strong>. I study how <strong>formal specifications</strong>, <strong>logical structure</strong>, and <strong>verification-inspired techniques</strong> can guide the training, evaluation, and certification of learned policies. A central theme of my research is <strong>specification-guided generalization</strong> i.e. enabling agents to transfer learned behavior across related tasks while preserving correctness and safety-relevant properties.
+                    </p>
+                    <p>
+                        I am also interested in how <strong>large language models</strong> can support planning, decision-making, and generalization in interactive environments, especially when combined with <strong>formal reasoning</strong> and <strong>verification tools</strong>. My long-term goal is to develop AI systems that are not only capable of learning from interaction, but also able to <strong>justify</strong>, <strong>certify</strong>, and reliably adapt their behavior.
+                    </p>
+                    <p>
+                        Before joining Georgia Tech, I completed my undergraduate studies at the National Institute of Technology Tiruchirappalli and interned at Newcastle University in collaboration with the Max Planck Institute, where I worked with <a class="person-link" href="https://hycodev.com/ssoudjani" target="_blank" rel="noopener noreferrer">Dr. Sadegh Soudjani</a> on reinforcement learning methods for stochastic max-plus linear systems.
+                    </p>
+                </div>
 
-                <h2>Research Interests</h2>
-                <p>
-                    My research is concerned with reliable learning-enabled systems: agents that learn, generalize, and still satisfy formally specified behavior.
-                </p>
-                <ol class="research-list">
-                    <li>Formal methods for reinforcement learning and specification-guided generalization.</li>
-                    <li>Verification, certification, and evaluation of learned policies.</li>
-                    <li>LLM-assisted planning, decision-making, and trustworthy autonomous systems.</li>
-                </ol>
+                <div class="content-block research-block">
+                    <h2>Research Interests</h2>
+                    <p>
+                        My research focuses on <strong>reliable learning-enabled systems</strong>: agents that learn, generalize across tasks, and satisfy formally specified behavior.
+                    </p>
+                    <ol class="research-list">
+                        <li><strong>Formal methods for reinforcement learning</strong> and specification-guided generalization.</li>
+                        <li><strong>Verification, certification, and rigorous evaluation</strong> of learned policies.</li>
+                        <li><strong>Logical specifications, task structure, and generalization</strong> in interactive learning.</li>
+                        <li><strong>LLM-assisted planning, decision-making, and trustworthy autonomous systems</strong>.</li>
+                    </ol>
+                </div>
             </section>
 
-            <section id="news-list" class="academic-section">
+            <section id="news-list" class="academic-section news-block">
                 <h2>News</h2>
                 <ul class="news-list">
                     <li><span class="news-date">Apr 2026</span><span>Gave a research talk at the <span class="bold-red">PLSEFM + AI Workshop</span>, Georgia Institute of Technology.</span></li>

@@ -9,7 +9,6 @@
     <script>
         (function () {
             var savedTheme = null;
-            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
             try {
                 savedTheme = localStorage.getItem('theme');
@@ -17,12 +16,12 @@
                 savedTheme = null;
             }
 
-            document.documentElement.setAttribute('data-theme', savedTheme || (prefersDark ? 'dark' : 'light'));
+            document.documentElement.setAttribute('data-theme', savedTheme || 'light');
         })();
     </script>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/timeline.css" rel="stylesheet">
-    <link href="assets/css/freelancer.css" rel="stylesheet">
+    <link href="assets/css/freelancer.css?v=6" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
