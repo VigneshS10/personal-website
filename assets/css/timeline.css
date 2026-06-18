@@ -36,7 +36,7 @@ Modules - reusable parts of our design
   left: 5px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: var(--border-color);
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -90,7 +90,7 @@ Modules - reusable parts of our design
 
 #contact {
   padding: 50px 0;
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: var(--surface-bg);
 }
 
 #contact h2 {
@@ -108,7 +108,7 @@ Modules - reusable parts of our design
 }
 
 #contact a {
-  color: #007BFF; /* Change to your preferred color */
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ Modules - reusable parts of our design
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px var(--section-bg), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
@@ -230,10 +230,10 @@ Modules - reusable parts of our design
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: var(--card-bg);
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0 3px 0 var(--border-color);
   text-align: justify
 }
 .cd-timeline-content:after {
@@ -242,7 +242,7 @@ Modules - reusable parts of our design
   clear: both;
 }
 .cd-timeline-content h2 {
-  color: #303e49;
+  color: var(--heading-color);
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
 }
@@ -255,12 +255,13 @@ Modules - reusable parts of our design
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
-  background: #acb7c0;
-  color: white;
+  background: var(--border-color);
+  color: var(--text-color);
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
+  background-color: var(--accent);
+  color: var(--accent-contrast);
 }
 .cd-timeline-content .cd-date {
   float: left;
@@ -275,7 +276,7 @@ Modules - reusable parts of our design
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid var(--card-bg);
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -301,7 +302,7 @@ Modules - reusable parts of our design
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: var(--card-bg);
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -322,7 +323,7 @@ Modules - reusable parts of our design
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: var(--card-bg);
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;

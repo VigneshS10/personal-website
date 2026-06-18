@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Vignesh Subramanian</title>
+    <script>
+        (function () {
+            var savedTheme = null;
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            try {
+                savedTheme = localStorage.getItem('theme');
+            } catch (error) {
+                savedTheme = null;
+            }
+
+            document.documentElement.setAttribute('data-theme', savedTheme || (prefersDark ? 'dark' : 'light'));
+        })();
+    </script>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/timeline.css" rel="stylesheet">
+    <link href="assets/css/freelancer.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+</head>
+
+<body id="page-top" class="index">
+    <nav class="academic-nav navbar-fixed-top">
+        <div class="academic-nav-inner">
+            <a class="academic-brand" href="index.html">Vignesh Subramanian</a>
+            <div class="academic-tabs">
+                <a href="index.html">About</a>
+                <a href="publications.html">Publications</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="resume.html">Resume</a>
+                <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    <span class="theme-toggle-text">Dark</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="academic-page">
+        <aside class="profile-sidebar">
+            <img class="profile-photo" src="assets/img/portrait-2.jpg" alt="Vignesh Subramanian">
+            <h1>Vignesh Subramanian</h1>
+            <p class="profile-title">Ph.D. Student<br>Graduate Research Assistant</p>
+            <p class="profile-affiliation">Georgia Institute of Technology</p>
+
+            <ul class="profile-links">
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Atlanta, GA</li>
+                <li><a href="mailto:vsubramanian64@gatech.edu"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+                <li><a href="https://github.com/VigneshS10" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/vignesh-subramanian-3754311b7/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                <li><a href="https://scholar.google.com/citations?user=yx5uCyQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a></li>
+                <li><a href="resume.html"><i class="fa fa-file-text-o" aria-hidden="true"></i> Resume</a></li>
+            </ul>
+        </aside>
+
+        <main class="academic-content">
+            <section class="academic-section" id="projects">
+                <h2>Projects</h2>
+                <div class="band">
+                    <div class="item">
+                        <a href="https://github.com/VigneshS10/Tri-Stage-Occlusion-Handling-Normal-map-Estimation-Algorithm" class="card portfolio-link" target="_blank" rel="noopener noreferrer">
+                            <article class="article">
+                                <h1>TSONHMEA</h1>
+                                <p>The Tri-Stage Occlusion Handling Normal Map Estimation Algorithm generates accurate 3D normal maps from heavily occluded 2D images by handling background, shadow, blur, depth, and orientation cues.</p>
+                                <span>Samsung Research</span>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://github.com/VigneshS10/Model-Quantization-For-Diabetes-Classification-in-Edge-Devices" class="card portfolio-link" target="_blank" rel="noopener noreferrer">
+                            <article class="article">
+                                <h1>Model Quantization For Diabetes Classification in Edge Devices</h1>
+                                <p>A static quantization approach for AlexNet, MobileNet, and ResNet-50 models trained on retina-based diabetes classification data, reducing model size while preserving performance.</p>
+                                <span>IIIT Hyderabad</span>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://github.com/VigneshS10/Binary-Sequence-Classification-using-BERT" class="card portfolio-link" target="_blank" rel="noopener noreferrer">
+                            <article class="article">
+                                <h1>Binary Sequence Classification using BERT</h1>
+                                <p>A PyTorch BERT-based sequence classifier for distinguishing paragraphs by whether their content remains evergreen or ephemeral over time.</p>
+                                <span>Kaggle</span>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.youtube.com/watch?v=CVP36nZr4QU" class="card portfolio-link" target="_blank" rel="noopener noreferrer">
+                            <article class="article">
+                                <h1>GISiL</h1>
+                                <p>A mechanical exoskeleton and learning pipeline for translating American Sign Language gestures into English using finger-joint sensor measurements.</p>
+                                <span>Spider R&amp;D</span>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="assets/js/freelancer.js"></script>
+</body>
+
+</html>
